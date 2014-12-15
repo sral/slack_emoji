@@ -1,5 +1,5 @@
 # slack_emoji.pl
-#   This script converts slack emojis to smileys.
+#   This script converts slack emoji to smileys.
 
 use strict;
 use warnings;
