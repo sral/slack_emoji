@@ -6,7 +6,7 @@ use warnings;
 use vars qw($VERSION %IRSSI);
 
 use Irssi;
-$VERSION = '0.01';
+$VERSION = '0.02';
 %IRSSI = (
     authors=> 'Lars Djerf',
     contact=> 'lars.djerf@gmail.com',
@@ -30,15 +30,14 @@ my %emoji = ('smile' => ':)',
 	     'open_mouth' => ':O',
 	     'heart' => '<3',
 	     'broken_heart' => '</3',
-	     'thumb' => '*thumbs-up*',
-	     '+1' => '+1');
+	     'thumb' => '*thumbs-up*');
 
 sub event_message_public ($$$) {
     my ($server, $msg, @rest) = @_;
-    $msg =~ /\:(\w+)\:/;
-    if ($1 && $emoji{$1}) {
-	my $smiley = $emoji{$1};
-	$msg =~ s/\:$1\:/$smiley/;
+    my @matches = ($msg =~ /\:(\w+)\:/g);
+    foreach (@matches) {
+	my $smiley = $emoji{$_};
+	$msg =~ s/\:$_\:/$smiley/;
     }
     Irssi::signal_continue($server, $msg, @rest);
 }
