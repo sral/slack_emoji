@@ -22,15 +22,16 @@ my %emoji = ('smile' => ':)',
 	     'wink' => ';)',
 	     'smirk' => ';)',
 	     'blush' => ':$',
-	     'stuck_out_tounge' => ':P',
-	     'stuck_out_tounge_winking_eye' => ';P',
-	     'stuck_out_tounge_closed_eyes' => '',
+	     'stuck_out_tongue' => ':P',
+	     'stuck_out_tongue_winking_eye' => ';P',
+	     'stuck_out_tongue_closed_eyes' => '',
 	     'disappointed' => ':(',
 	     'astonished' => ':O',
 	     'open_mouth' => ':O',
 	     'heart' => '<3',
 	     'broken_heart' => '</3',
-	     'thumb' => '*thumbs-up*');
+	     'thumb' => '*thumbs-up*',
+	     'thumbsup' => '*thumbs-up*');
 
 sub event_message ($$$) {
     my ($server, $msg, @rest) = @_;
