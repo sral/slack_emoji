@@ -31,7 +31,8 @@ my %emoji = ('smile' => ':)',
 	     'heart' => '<3',
 	     'broken_heart' => '</3',
 	     'thumb' => '*thumbs-up*',
-	     'thumbsup' => '*thumbs-up*');
+	     'thumbsup' => '*thumbs-up*',
+	     'confused' => ':S');
 
 sub event_message ($$$) {
     my ($server, $msg, @rest) = @_;
