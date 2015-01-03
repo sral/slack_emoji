@@ -11,8 +11,8 @@ $VERSION = '0.03';
     authors=> 'Lars Djerf',
     contact=> 'lars.djerf@gmail.com',
     name=> 'slack_emoji',
-    description=> 'This script convers Slack emoji to smileys.',
-    license=> 'GPL',
+    description=> 'This script converts Slack emoji to smileys.',
+    license=> 'GPLv3',
     );
 
 my %emoji = ('smile' => ':)',
