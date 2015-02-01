@@ -18,6 +18,8 @@ $VERSION = '0.03';
 my %emoji = ('smile' => ':)',
 	     'simple_smile' => ':)',
 	     'smiley' => ':-)',
+	     'laughing' => ':D',
+	     'cry' => ':\'(',
 	     'grin' => ':D',
 	     'wink' => ';)',
 	     'smirk' => ';)',
